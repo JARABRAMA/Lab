@@ -1,4 +1,4 @@
-from Loboratory.common_classes.Classes import *
+from Laboratory.common_classes.Classes import *
 
 
 def create_list() -> List:
@@ -12,8 +12,7 @@ def create_list() -> List:
         index += 1
         try:
             data: int = int(input(f"Enter the data of the index {index}: __"))
-            node = Node(data)
-            nodal_list.__add__(node)
+            nodal_list.__add__(data)
         except ValueError:
             stop = True
 
@@ -23,4 +22,3 @@ def create_list() -> List:
 nlist = create_list()
 nlist.insert(3, 2)
 nlist.print()
-
