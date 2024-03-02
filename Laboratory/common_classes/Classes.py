@@ -27,6 +27,13 @@ class Node:
 class List:  # Double link list
     def __init__(self, node: Node):
         self._node = node
+        self._size: int = 1
+
+    def increase_size(self):
+        self._size += 1
+
+    def size(self) -> int:
+        return self._size
 
     def get_head(self) -> Node:
         return self._node
@@ -39,7 +46,7 @@ class List:  # Double link list
 
     def add(self, data):
         other: Node = Node(data)
-
+        self.increase_size()  # this function increase the size of the list
         other.set_left_link(self.last())
         self.last().set_right_link(other)
 
@@ -51,6 +58,7 @@ class List:  # Double link list
         return e_node
 
     def insert(self, index: int, data):
+        self.increase_size()
         new_node: Node = Node(data)
         _node: Node = self.getitem(index - 2)  # the previous position that i what to insert
 
@@ -74,11 +82,19 @@ class CList:  # Circular List
         self._node = node
         self._node.set_right_link(node)
         self._node.set_left_link(node)
+        self._size = 1
 
     def get_head(self) -> Node:
         return self._node
 
+    def size(self) -> int:
+        return self._size
+
+    def increase_size(self):
+        self._size += 1
+
     def add(self, data):
+        self.increase_size()
         other: Node = Node(data)
 
         other.set_right_link(self._node)
@@ -110,6 +126,8 @@ class CList:  # Circular List
         return node
 
     def insert(self, index: int, data):
+        self.increase_size()
+
         other: Node = Node(data)
         previous: Node = self.item(index).get_left_link()
 
