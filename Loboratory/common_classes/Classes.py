@@ -35,3 +35,7 @@ class List:  # Double link list
         while e_node is not None:
             print(f"Node__{e_node.data}")
             e_node = e_node.right_link
+ 
+ class CList: 
+    def __init__(self, node: Node): 
+        self._node = node
