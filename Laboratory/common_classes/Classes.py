@@ -28,6 +28,9 @@ class List:  # Double link list
     def __init__(self, node: Node):
         self._node = node
 
+    def get_head(self) -> Node:
+        return self._node
+
     def last(self) -> Node:
         e_node = self._node
         while e_node.get_right_link() is not None:
@@ -71,6 +74,9 @@ class CList:  # Circular List
         self._node = node
         self._node.set_right_link(node)
         self._node.set_left_link(node)
+
+    def get_head(self) -> Node:
+        return self._node
 
     def add(self, data):
         other: Node = Node(data)
