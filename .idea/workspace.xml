@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc8cc3fb-42f2-4d21-929f-edc503680afa" name="Changes" comment="first commit">
+    <list default="true" id="bc8cc3fb-42f2-4d21-929f-edc503680afa" name="Changes" comment="the clas List is already">
+      <change afterPath="$PROJECT_DIR$/Laboratory/common_classes/testing/testing_circular_list.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loboratory/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loboratory/common_classes/Classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory/common_classes/Classes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loboratory/common_classes/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory/common_classes/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loboratory/common_classes/testing/Testin_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory/common_classes/testing/Testin_classes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loboratory/common_classes/testing/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory/common_classes/testing/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laboratory/common_classes/Classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory/common_classes/Classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laboratory/common_classes/testing/Testin_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory/common_classes/testing/Testin_classes.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +23,34 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;JARABRAMA&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="db799d60-3180-4caf-bad5-bc1c875bfd27" />
+        <option name="url" value="https://github.com/JARABRAMA/Lab" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -36,16 +61,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.Classes.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Testin_classes.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Classes.executor": "Run",
+    "Python.Testin_classes.executor": "Run",
+    "Python.testing_circular_list.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Loboratory/common_classes" />
@@ -75,7 +101,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709340435759</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="the clas List is already">
+      <option name="closed" value="true" />
+      <created>1709376117555</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709376117555</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -91,6 +125,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="the clas List is already" />
+    <option name="LAST_COMMIT_MESSAGE" value="the clas List is already" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="e_node.right_link.data" language="Python" />
+        <watch expression="e_node.right_link.data.data" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

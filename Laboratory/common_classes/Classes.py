@@ -34,13 +34,13 @@ class List:  # Double link list
             e_node = e_node.get_right_link()
         return e_node
 
-    def __add__(self, data):
-        other = Node(data)
+    def add(self, data):
+        other: Node = Node(data)
 
-        other._left_link = self.last()
-        self.last()._right_link = other
+        other.set_left_link(self.last())
+        self.last().set_right_link(other)
 
-    def __getitem__(self, index: int) -> Node:
+    def getitem(self, index: int) -> Node:
         e_node = self._node
         for i in range(index):
             e_node = e_node.get_right_link()
@@ -49,13 +49,13 @@ class List:  # Double link list
 
     def insert(self, index: int, data):
         new_node: Node = Node(data)
-        _node: Node = self.__getitem__(index - 2)  # the anterior position that i what to insert
+        _node: Node = self.getitem(index - 2)  # the anterior position that i what to insert
 
-        if _node.get_right_link() is None:
-            self.__add__(data)
+        if _node.get_right_link is None:
+            self.add(data)
         else:
             new_node.set_left_link(_node)
-            new_node.set_right_link(_node.get_right_link())
+            new_node.set_right_link(_node.get_right_link)
             _node.get_right_link().set_left_link(new_node)
             _node.set_right_link(new_node)
 
@@ -63,9 +63,54 @@ class List:  # Double link list
         e_node = self._node
         while e_node is not None:
             print(f"Node__{e_node.get_data()}")
-            e_node = e_node.get_right_link()
+            e_node = e_node.get_right_link
 
 
-class CList:
+class CList:  # Circular List
     def __init__(self, node: Node):
         self._node = node
+        self._node.set_right_link(node)
+        self._node.set_left_link(node)
+
+    def add(self, data):
+        other: Node = Node(data)
+
+        other.set_right_link(self._node)
+        other.set_left_link(self.last())
+        self.last().set_right_link(other)
+        self._node.set_left_link(other)
+
+    def last(self) -> Node:
+        node: Node = self._node.get_right_link()
+
+        while node.get_right_link() != self._node:
+            node = node.get_right_link()
+
+        return node
+
+    def print(self):
+        print(f"data: __{self._node.get_data()}")
+        node: Node = self._node.get_right_link()
+        while node != self._node:
+            print(f"data: __{node.get_data()}")
+            node = node.get_right_link()
+
+    def item(self, index: int) -> Node:
+        node: Node = self._node
+        for i in range(index):
+            node = node.get_right_link()
+            if node == self._node:
+                raise RuntimeError("Invalid Index")
+        return node
+
+    def insert(self, index: int, data):
+        other: Node = Node(data)
+        previous: Node = self.item(index).get_left_link()
+
+        if previous.get_right_link() is None:
+            self.add(data)
+        else:
+            other.set_left_link(previous)
+            other.set_right_link(previous.get_right_link())
+            previous.get_right_link().set_left_link(other)
+            previous.set_right_link(other)
