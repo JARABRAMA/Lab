@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc8cc3fb-42f2-4d21-929f-edc503680afa" name="Changes" comment="resposive names">
-      <change afterPath="$PROJECT_DIR$/Laboratory/polynomials/methods.py" afterDir="false" />
+    <list default="true" id="bc8cc3fb-42f2-4d21-929f-edc503680afa" name="Changes" comment="new method get_head() to get the firs nodes of the list">
+      <change afterPath="$PROJECT_DIR$/Laboratory/polynomials/solution/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laboratory/polynomials/term.py" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory/polynomials/term.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laboratory/common_classes/Classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory/common_classes/Classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laboratory/polynomials/methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory/polynomials/methods.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,17 +61,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.Classes.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Testin_classes.executor&quot;: &quot;Run&quot;,
-    &quot;Python.testing_circular_list.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Classes.executor": "Run",
+    "Python.Testin_classes.executor": "Run",
+    "Python.testing_circular_list.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Loboratory/common_classes" />
@@ -124,7 +125,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709384714404</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="new method get_head() to get the firs nodes of the list">
+      <option name="closed" value="true" />
+      <created>1709397093790</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709397093790</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,7 +152,8 @@
     <MESSAGE value="the clas List is already" />
     <MESSAGE value="the class circular list is already" />
     <MESSAGE value="resposive names" />
-    <option name="LAST_COMMIT_MESSAGE" value="resposive names" />
+    <MESSAGE value="new method get_head() to get the firs nodes of the list" />
+    <option name="LAST_COMMIT_MESSAGE" value="new method get_head() to get the firs nodes of the list" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

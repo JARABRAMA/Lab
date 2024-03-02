@@ -52,7 +52,7 @@ class List:  # Double link list
 
     def insert(self, index: int, data):
         new_node: Node = Node(data)
-        _node: Node = self.getitem(index - 2)  # the anterior position that i what to insert
+        _node: Node = self.getitem(index - 2)  # the previous position that i what to insert
 
         if _node.get_right_link is None:
             self.add(data)
