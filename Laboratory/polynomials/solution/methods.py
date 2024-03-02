@@ -90,7 +90,7 @@ def sum_polynomial(px: List, qx: List) -> CList:
             node_2 = node_2.get_right_link()
         if node_1 is not None:
             poly_sum = insert_rest(node_1, poly_sum)
-        else:
+        elif node_2 is not None:
             poly_sum = insert_rest(node_2, poly_sum)
     else:
         raise RuntimeError("Invalid parameters")
