@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc8cc3fb-42f2-4d21-929f-edc503680afa" name="Changes" comment="incorporated size in the list classes">
-      <change afterPath="$PROJECT_DIR$/Laboratory/polynomials/test/polynomial_rest.py" afterDir="false" />
+    <list default="true" id="bc8cc3fb-42f2-4d21-929f-edc503680afa" name="Changes" comment="the rest by similar polynomials are incorporated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laboratory/common_classes/Classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory/common_classes/Classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laboratory/common_classes/testing/testing_double_link_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory/common_classes/testing/testing_double_link_list.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laboratory/polynomials/solution/methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory/polynomials/solution/methods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laboratory/polynomials/test/polynomial_rest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory/polynomials/test/polynomial_rest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +70,7 @@
     "Python.polynomial_rest.executor": "Run",
     "Python.test.polinomial_sum.executor": "Run",
     "Python.testing_circular_list.executor": "Run",
+    "Python.testing_double_link_list.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -161,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709406694802</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="the rest by similar polynomials are incorporated">
+      <option name="closed" value="true" />
+      <created>1709460136527</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709460136527</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,7 +194,8 @@
     <MESSAGE value="the sum is completed but is not tested" />
     <MESSAGE value="logical error in the insertion of node_2" />
     <MESSAGE value="incorporated size in the list classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="incorporated size in the list classes" />
+    <MESSAGE value="the rest by similar polynomials are incorporated" />
+    <option name="LAST_COMMIT_MESSAGE" value="the rest by similar polynomials are incorporated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -195,11 +206,19 @@
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Laboratory/polynomials/test/polynomial_rest.py</url>
-          <line>52</line>
-          <option name="timeStamp" value="22" />
+          <url>file://$PROJECT_DIR$/Laboratory/common_classes/Classes.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="q" />
+        <watch expression="qt" />
+        <watch expression="qt" />
+        <watch expression="qt" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

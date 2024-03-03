@@ -1,24 +1,24 @@
-from Laboratory.polynomials.solution.methods import bind_polynomials, reduce_polynomial
+from Laboratory.polynomials.solution.methods import *
 from Laboratory.polynomials.solution.term import Term
 from Laboratory.common_classes.Classes import *
 
 # creation of px polynomial
 p1 = Node(
     Term(
-        coefficient=3,
+        coefficient=4,
         grade=2
     )
 )
 px = List(p1)
 px.add(
     Term(
-        coefficient=2,
+        coefficient=-2,
         grade=1
     )
 )
 px.add(
     Term(
-        coefficient=1,
+        coefficient=3,
         grade=0
     )
 )
@@ -26,24 +26,23 @@ px.add(
 # Creation of qx polynomial
 q1 = Node(
     Term(
-        coefficient=1,
+        coefficient=2,
         grade=2
     )
 )
 qx = List(q1)
 qx.add(
     Term(
-        coefficient=1,
+        coefficient=8,
         grade=1
     )
 )
 qx.add(
     Term(
-        coefficient=1,
+        coefficient=2,
         grade=0
     )
 )
-c_list = bind_polynomials(px, qx)
 
 
 def poly_print(slist: List):
@@ -55,9 +54,5 @@ def poly_print(slist: List):
         _node = _node.get_right_link()
 
 
-poly_print(c_list)
-print("##########################")
-result = reduce_polynomial(c_list)
+result = rest_polynomials(px, qx)
 poly_print(result)
-
-

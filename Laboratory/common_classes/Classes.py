@@ -27,13 +27,14 @@ class Node:
 class List:  # Double link list
     def __init__(self, node: Node):
         self._node = node
-        self._size: int = 1
-
-    def increase_size(self):
-        self._size += 1
 
     def size(self) -> int:
-        return self._size
+        index = 0
+        _node: Node = self.get_head()
+        while _node is not None:
+            _node = _node.get_right_link()
+            index += 1
+        return index
 
     def get_head(self) -> Node:
         return self._node
@@ -44,9 +45,18 @@ class List:  # Double link list
             e_node = e_node.get_right_link()
         return e_node
 
+    def contains(self, item) -> bool:
+        node: Node = self.get_head()
+        contains: bool = False
+        while node is not None:
+            if node.get_data() == item:
+                contains = True
+                break
+            node = node.get_right_link()
+        return contains
+
     def add(self, data):
         other: Node = Node(data)
-        self.increase_size()  # this function increase the size of the list
         other.set_left_link(self.last())
         self.last().set_right_link(other)
 
@@ -58,7 +68,6 @@ class List:  # Double link list
         return e_node
 
     def insert(self, index: int, data):
-        self.increase_size()
         new_node: Node = Node(data)
         _node: Node = self.getitem(index - 2)  # the previous position that i what to insert
 
