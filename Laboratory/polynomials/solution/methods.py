@@ -1,98 +1,60 @@
-"""
-this document contains the necessary
-functions to solves multiplication of polynomials
-these methods takes as a fact that the polynomials are order
-"""
 from Laboratory.common_classes.Classes import *
 from Laboratory.polynomials.solution.term import Term
 
-
-def mayor_grade(px: List, qx: List) -> List:  # this method verifies what polynomial has the mayor grade
-    if qx.get_head().get_data() is Term and px.get_head().get_data() is Term:
-        px_term: Term = px.get_head().get_data()
-        qx_term: Term = qx.get_head().get_data()
-
-        if px_term.get_grade() > qx_term.get_grade():
-            return px
-        elif px_term.get_grade() < qx_term.get_grade():
-            return qx
-        else:
-            return px
-    else:
-        raise RuntimeError("Invalid parameters")
+"""
+this document contains the necessary
+functions to solves polynomials rest
+the solution consist in bind the polynomial 
+in an unic list to latter reduce it
+"""
 
 
-def minor_grade(px, qx) -> List:  # this method verifies what polynomial has the minor grade
-    if qx.get_head().get_data() is Term and px.get_head().get_data() is Term:
-        px_term: Term = px.get_head().get_data()
-        qx_term: Term = qx.get_head().get_data()
-
-        if px_term.get_grade() > qx_term.get_grade():
-            return qx
-        elif px_term.get_grade() < qx_term.get_grade():
-            return px
-        else:
-            return px
-    else:
-        raise RuntimeError("Invalid parameters")
+def rest_term(term_p: Term, term_q: Term) -> Term:
+    # is a fact that the terms are similar
+    return Term(
+        coefficient=term_p.get_coefficient() - term_q.get_coefficient(),
+        grade=term_q.get_grade()
+    )
 
 
-def sum_term(node_1: Node, node_2: Node) -> Node:
-    term1: Term = node_1.get_data()
-    term2: Term = node_2.get_data()
-    if term1 is Term and term2 is Term:
-        if term1.get_grade() == term2.get_grade():
-            return Node(
-                Term(
-                    coefficient=term1.get_coefficient() + term2.get_coefficient(),
-                    grade=term2.get_grade()
-                )
-            )
-        else:
-            if term1.get_grade() > term2.get_grade():
-                return node_1
-            else:
-                return node_2
-    else:
-        raise RuntimeError("Invalid Parameters")
+def bind_polynomials(px: List, qx: List) -> List:
+    result: List = List(px.get_head())
+    qx.get_head().set_left_link(result.last())
+    result.last().set_right_link(qx.get_head())
+
+    # while _node is not None:
+    #    result.add(_node.get_data())
+    #   _node = _node.get_right_link()
+
+    return result
 
 
-def insert_rest(node: Node, c_list: CList) -> CList:
-    while node is not None:
-        c_list.add(node)
-        node = node.get_right_link()
+def reduce_polynomial(fx: List) -> List:
+    x: Term
+    y: Term
+    result: List
+    index = 0
 
+    sump: bool = False
+    n1: Node = fx.get_head()
+    while n1 is not None:
+        n2: Node = n1.get_right_link()
 
-def sum_polynomial(px: List, qx: List) -> CList:
-    if px.getitem(0).get_data() is Term and qx.getitem(0).get_data() is Term:
-        # Check that the  lists have polynomials
+        while n2 is not None:
+            if n1.get_data().get_grade() == n2.get_data().get_grade() and n1 != n2:
+                if index == 0:
+                    result = List(
+                        Node(
+                            rest_term(n1.get_data(), n2.get_data())
+                        )
+                    )
+                    index += 1
+                else:
+                    result.add(
+                        rest_term(n1.get_data(), n2.get_data())
+                    )
+                    index += 1
+            n2 = n2.get_right_link()
 
-        poly_sum: CList
-        node_sum: Node
-
-        mayor_polynomial: List = mayor_grade(px, qx)
-        minor_polynomial: List = minor_grade(px, qx)
-
-        node_1: Node = mayor_polynomial.get_head()
-        node_2: Node = minor_polynomial.get_head()
-
-        poly_sum = CList(
-            sum_term(node_1, node_2)
-        )
-
-        node_1 = node_1.get_right_link()
-        node_2 = node_2.get_right_link()
-        while node_1 is not None and node_2 is not None:
-            poly_sum = CList(
-                sum_term(node_1, node_2)
-            )
-            node_1 = node_1.get_right_link()
-            node_2 = node_2.get_right_link()
-        if node_1 is not None:
-            poly_sum = insert_rest(node_1, poly_sum)
-        elif node_2 is not None:
-            poly_sum = insert_rest(node_2, poly_sum)
-    else:
-        raise RuntimeError("Invalid parameters")
-
-    return poly_sum
+        n1 = n1.get_right_link()
+    return result

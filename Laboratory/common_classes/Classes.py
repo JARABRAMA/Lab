@@ -74,7 +74,7 @@ class List:  # Double link list
         e_node = self._node
         while e_node is not None:
             print(f"Node__{e_node.get_data()}")
-            e_node = e_node.get_right_link
+            e_node = e_node.get_right_link()
 
 
 class CList:  # Circular List
