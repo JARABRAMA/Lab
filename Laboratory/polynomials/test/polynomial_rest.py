@@ -4,19 +4,19 @@ from Laboratory.common_classes.Classes import *
 
 px = List(
     Term(
-        coefficient=4,
+        coefficient=1,
         grade=2
     )
 )
 px.add(
     Term(
-        coefficient=-2,
+        coefficient=1,
         grade=2
     )
 )
 px.add(
     Term(
-        coefficient=3,
+        coefficient=8,
         grade=0
     )
 )
@@ -24,32 +24,24 @@ px.add(
 # Creation of qx polynomial
 qx = List(
     Term(
-        coefficient=2,
+        coefficient=1,
+        grade=4
+    )
+)
+qx.add(
+    Term(
+        coefficient=-1,
+        grade=3
+    )
+)
+qx.add(
+    Term(
+        coefficient=1,
         grade=2
     )
 )
-qx.add(
-    Term(
-        coefficient=8,
-        grade=1
-    )
-)
-qx.add(
-    Term(
-        coefficient=2,
-        grade=0
-    )
-)
 
 
-def poly_print(slist: List):
-    _node = slist.get_head()
-    term: Term
-    while _node is not None:
-        term = _node.get_data()
-        print(f"{term.get_coefficient()} X ^ {term.get_grade()}")
-        _node = _node.get_right_link()
-
-
-result = reduce_polynomial(px)
+result = rest_polynomials(px,qx)
+print("result")
 poly_print(result)
