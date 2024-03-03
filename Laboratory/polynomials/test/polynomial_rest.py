@@ -2,18 +2,16 @@ from Laboratory.polynomials.solution.methods import *
 from Laboratory.polynomials.solution.term import Term
 from Laboratory.common_classes.Classes import *
 
-# creation of px polynomial
-p1 = Node(
+px = List(
     Term(
         coefficient=4,
         grade=2
     )
 )
-px = List(p1)
 px.add(
     Term(
         coefficient=-2,
-        grade=1
+        grade=2
     )
 )
 px.add(
@@ -24,13 +22,12 @@ px.add(
 )
 
 # Creation of qx polynomial
-q1 = Node(
+qx = List(
     Term(
         coefficient=2,
         grade=2
     )
 )
-qx = List(q1)
 qx.add(
     Term(
         coefficient=8,
@@ -54,5 +51,5 @@ def poly_print(slist: List):
         _node = _node.get_right_link()
 
 
-result = rest_polynomials(px, qx)
+result = reduce_polynomial(px)
 poly_print(result)

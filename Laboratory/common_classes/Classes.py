@@ -25,8 +25,8 @@ class Node:
 
 
 class List:  # Double link list
-    def __init__(self, node: Node):
-        self._node = node
+    def __init__(self, data):
+        self._node = Node(data)
 
     def size(self) -> int:
         index = 0

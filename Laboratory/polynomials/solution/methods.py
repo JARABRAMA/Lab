@@ -25,6 +25,52 @@ def rest_term(term_p: Term, term_q: Term) -> Term:
     )
 
 
+def reduce_polynomial(fx: List) -> List:
+    result: List
+    checked = List(-1)
+
+    x: Node
+    y: Node
+    term_sum: Term
+
+    x = fx.get_head()
+    y = fx.get_head().get_right_link()
+    reduce: bool = False
+    i: int = 0  # this is the size of the result list
+
+    xt: Term = x.get_data()
+    while x is not None:
+        xt: Term = x.get_data()
+        while y is not None:
+            yt: Term = y.get_data()
+
+            if xt.get_grade() == yt.get_grade() and not checked.contains(xt.get_grade()):
+                if i == 0:
+                    result = List(sum_term(xt, yt))
+                    i += 1
+                    reduce = True
+                    checked.add(xt.get_grade())
+                else:
+                    result.add(sum_term(xt, yt))
+                    i += 1
+                    reduce = True
+                    checked.add(xt.get_grade())
+
+            y = y.get_right_link()
+
+        if not reduce:
+            if i == 0:
+                result = List(xt)
+                reduce = False
+                i += 1
+            else:
+                result.add(xt)
+                reduce = False
+                i += 1
+        x = x.get_right_link()
+    return result
+
+
 def rest_polynomials(px: List, qx: List) -> List:
     result: List
     p: Node = px.get_head()
@@ -40,10 +86,10 @@ def rest_polynomials(px: List, qx: List) -> List:
             while q is not None:
                 qt: Term = q.get_data()
 
-                if pt.get_grade() == qt.get_grade():  # this validation check that
-                    if index == 0:  # the list result has been initialized
-                        result = List(
-                            Node(rest_term(pt, qt))
+                if pt.get_grade() == qt.get_grade():
+                    if index == 0:  # this validation check that
+                        result = List(  # the list result has been initialized
+                            rest_term(pt, qt)
                         )
                         index += 1
                         sum_check = True
@@ -56,7 +102,7 @@ def rest_polynomials(px: List, qx: List) -> List:
 
             if not sum_check:
                 if index == 0:
-                    result = List(p)
+                    result = List(pt)
                     sum_check = False
                     index += 1
                 else:
