@@ -1,4 +1,5 @@
 from Laboratory.common_classes.Classes import *
+from Laboratory.common_methods.type_list_methods import double_link_list_to_circular_list
 from Laboratory.polynomials.solution.term import Term
 
 """
@@ -82,7 +83,7 @@ def resting_terms(n, grades, result) -> List:
     return result
 
 
-def rest_polynomials(px: List, qx: List) -> List:
+def rest_polynomials(px: List, qx: List) -> CList:
     result: List
     grades: List = List(-1)  # this list has the reduced grades
     px = reduce_polynomial(px)
@@ -110,4 +111,4 @@ def rest_polynomials(px: List, qx: List) -> List:
         result = resting_terms(qx.get_head(), grades, result)
     else:
         raise RuntimeError("Invalid Parameters")
-    return result
+    return double_link_list_to_circular_list(result)
