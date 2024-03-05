@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc8cc3fb-42f2-4d21-929f-edc503680afa" name="Changes" comment="gracias mariana ya funciona el metodo common_elents">
+    <list default="true" id="bc8cc3fb-42f2-4d21-929f-edc503680afa" name="Changes" comment="que alegria terminamos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laboratory/hight_precition_number/solution/methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory/hight_precition_number/solution/methods.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laboratory/hight_precition_number/testing/testing sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory/hight_precition_number/testing/testing sum.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laboratory/common_classes/Classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory/common_classes/Classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laboratory/common_methods/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory/polynomials/test/lsl_to_circular_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laboratory/common_methods/type_list_methods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laboratory/polynomials/solution/methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory/polynomials/solution/methods.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,8 +70,9 @@
   "keyToString": {
     "Python.Classes.executor": "Debug",
     "Python.Testin_classes.executor": "Run",
+    "Python.lsl_to_circular_list.executor": "Run",
     "Python.methods.executor": "Run",
-    "Python.polynomial_rest.executor": "Run",
+    "Python.polynomial_rest.executor": "Debug",
     "Python.test.polinomial_sum.executor": "Run",
     "Python.testing sum.executor": "Run",
     "Python.testing_circular_list.executor": "Run",
@@ -224,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709662383616</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="que alegria terminamos">
+      <option name="closed" value="true" />
+      <created>1709663397340</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1709663397340</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -254,7 +265,8 @@
     <MESSAGE value="Implements better practices in the rest point" />
     <MESSAGE value="polynomi are improved" />
     <MESSAGE value="gracias mariana ya funciona el metodo common_elents" />
-    <option name="LAST_COMMIT_MESSAGE" value="gracias mariana ya funciona el metodo common_elents" />
+    <MESSAGE value="que alegria terminamos" />
+    <option name="LAST_COMMIT_MESSAGE" value="que alegria terminamos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -263,11 +275,6 @@
           <url>file://$PROJECT_DIR$/Laboratory/common_classes/testing/testing_circular_list.py</url>
           <line>10</line>
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Laboratory/polynomials/solution/methods.py</url>
-          <line>104</line>
-          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

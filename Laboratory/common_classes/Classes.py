@@ -95,10 +95,10 @@ class List:  # Double link list
 
 
 class CList:  # Circular List
-    def __init__(self, node: Node):
-        self._node = node
-        self._node.set_right_link(node)
-        self._node.set_left_link(node)
+    def __init__(self, data):
+        self._node = Node(data)
+        self._node.set_right_link(self._node)
+        self._node.set_left_link(self._node)
         self._size = 1
 
     def get_head(self) -> Node:

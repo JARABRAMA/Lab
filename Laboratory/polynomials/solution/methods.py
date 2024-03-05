@@ -1,5 +1,4 @@
 from Laboratory.common_classes.Classes import *
-from Laboratory.common_methods.type_list_methods import double_link_list_to_circular_list
 from Laboratory.polynomials.solution.term import Term
 
 """
@@ -10,13 +9,24 @@ in an unic list to latter reduce it
 """
 
 
-def poly_print(slist: List):
-    _node = slist.get_head()
-    term: Term
-    while _node is not None:
+def poly_print(circular_list: List):
+    _node = circular_list.get_head()
+    term: Term = _node.get_data()
+    print(f"{term.get_coefficient()} X ^ {term.get_grade()}")
+    _node = _node.get_right_link()
+    while _node != circular_list.get_head():
         term = _node.get_data()
         print(f"{term.get_coefficient()} X ^ {term.get_grade()}")
         _node = _node.get_right_link()
+
+
+def double_link_list_to_circular_list(lsl: List) -> CList:
+    result: CList = CList(lsl.get_head().get_data())
+    node: Node = lsl.get_head().get_right_link()
+    while node is not None:
+        result.add(node.get_data())
+        node = node.get_right_link()
+    return result
 
 
 def sum_term(term_p: Term, term_q: Term) -> Term:
