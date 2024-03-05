@@ -5,8 +5,7 @@ def create_list() -> List:
     stop: bool = False
     index = 0
     data: int = int(input(f"Enter the data of the index {index}: __"))
-    node: Node = Node(data)
-    nodal_list = List(node)
+    nodal_list = List(data)
 
     while not stop:
         index += 1
@@ -21,5 +20,10 @@ def create_list() -> List:
 
 nlist = create_list()
 nlist.print()
-print(nlist.size())
-print(nlist.contains(3))
+print("##########")
+nlist.insert(0, -1)
+nlist.print()
+print("##########")
+nlist.insert(0, -2)
+nlist.print()
+print("##########")

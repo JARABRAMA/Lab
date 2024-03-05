@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc8cc3fb-42f2-4d21-929f-edc503680afa" name="Changes" comment="Implements better practices in the rest point">
-      <change afterPath="$PROJECT_DIR$/Laboratory/Common Methods/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laboratory/Common Methods/methods.py" afterDir="false" />
+    <list default="true" id="bc8cc3fb-42f2-4d21-929f-edc503680afa" name="Changes" comment="polynomi are improved">
+      <change afterPath="$PROJECT_DIR$/Laboratory/hight_precition_number/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laboratory/hight_precition_number/solution/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laboratory/hight_precition_number/solution/methods.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laboratory/hight_precition_number/testing/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laboratory/hight_precition_number/testing/testing sum.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laboratory/thre_list/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laboratory/thre_list/solution/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laboratory/thre_list/solution/method.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laboratory/common_classes/Classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory/common_classes/Classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laboratory/common_classes/testing/testing_double_link_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory/common_classes/testing/testing_double_link_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laboratory/polynomials/solution/methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory/polynomials/solution/methods.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +60,9 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Laboratory/hight_precition_number/solution/methods.py" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -60,21 +72,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Classes.executor": "Debug",
-    "Python.Testin_classes.executor": "Run",
-    "Python.methods.executor": "Run",
-    "Python.polynomial_rest.executor": "Run",
-    "Python.test.polinomial_sum.executor": "Run",
-    "Python.testing_circular_list.executor": "Run",
-    "Python.testing_double_link_list.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Classes.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.Testin_classes.executor&quot;: &quot;Run&quot;,
+    &quot;Python.methods.executor&quot;: &quot;Run&quot;,
+    &quot;Python.polynomial_rest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.polinomial_sum.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testing sum.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testing_circular_list.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testing_double_link_list.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Laboratory/polynomials/solution" />
@@ -201,7 +214,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709496382405</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="polynomi are improved">
+      <option name="closed" value="true" />
+      <created>1709498287239</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1709498287239</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -229,7 +250,8 @@
     <MESSAGE value="method reduce polynomial created. Not completed, And constructor of List modified" />
     <MESSAGE value="the rest is completed" />
     <MESSAGE value="Implements better practices in the rest point" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implements better practices in the rest point" />
+    <MESSAGE value="polynomi are improved" />
+    <option name="LAST_COMMIT_MESSAGE" value="polynomi are improved" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -238,6 +260,11 @@
           <url>file://$PROJECT_DIR$/Laboratory/common_classes/testing/testing_circular_list.py</url>
           <line>10</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Laboratory/polynomials/solution/methods.py</url>
+          <line>104</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

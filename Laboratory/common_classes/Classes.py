@@ -39,6 +39,9 @@ class List:  # Double link list
     def get_head(self) -> Node:
         return self._node
 
+    def set_head(self, node: Node):
+        self._node = node
+
     def last(self) -> Node:
         e_node = self._node
         while e_node.get_right_link() is not None:
@@ -69,15 +72,20 @@ class List:  # Double link list
 
     def insert(self, index: int, data):
         new_node: Node = Node(data)
-        _node: Node = self.getitem(index - 2)  # the previous position that i what to insert
+        if index != 0:
+            _node: Node = self.getitem(index - 2)  # the previous position that i what to insert
 
-        if _node.get_right_link is None:
-            self.add(data)
+            if _node.get_right_link is None:
+                self.add(data)
+            else:
+                new_node.set_left_link(_node)
+                new_node.set_right_link(_node.get_right_link)
+                _node.get_right_link().set_left_link(new_node)
+                _node.set_right_link(new_node)
         else:
-            new_node.set_left_link(_node)
-            new_node.set_right_link(_node.get_right_link)
-            _node.get_right_link().set_left_link(new_node)
-            _node.set_right_link(new_node)
+            self.get_head().set_left_link(new_node)
+            new_node.set_right_link(self.get_head())
+            self.set_head(new_node)
 
     def print(self):
         e_node = self._node

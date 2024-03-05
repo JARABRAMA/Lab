@@ -70,6 +70,8 @@ def reduce_polynomial(fx: List) -> List:
                 else:
                     result.add(xt)
             x = x.get_right_link()
+    else:
+        raise RuntimeError("IInvalid Paramaters")
 
     return result
 
@@ -89,7 +91,7 @@ def rest_polynomials(px: List, qx: List) -> CList:
     px = reduce_polynomial(px)
     qx = reduce_polynomial(qx)
     p: Node = px.get_head()
-    q = qx.get_head()
+    q: Node = qx.get_head()
     initialize = False
     if isinstance(p.get_data(), Term) and isinstance(q.get_data(), Term):
         while p is not None:
