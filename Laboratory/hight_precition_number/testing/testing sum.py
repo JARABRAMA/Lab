@@ -2,12 +2,12 @@ from Laboratory.common_classes.Classes import List
 from Laboratory.hight_precition_number.solution.methods import sum_numbers
 
 a = List(1)
-a.add(5)  # 15
+a.add(2)
 
-b = List(8)
-b.add(6)  # 76
+b = List(1)
+b.add(9)
 
-# target 15 + 76 = 91
+# target  12 + 19 = 31
 
-nsum = sum_numbers(a, b)
+nsum: List = sum_numbers(a, b)
 nsum.print()

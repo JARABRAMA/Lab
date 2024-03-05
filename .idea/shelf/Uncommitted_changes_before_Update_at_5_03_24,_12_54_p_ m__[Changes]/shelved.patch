@@ -1,0 +1,121 @@
+Index: Laboratory/thre_list/solution/method.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from Laboratory.common_classes.Classes import List, Node\n\n\ndef common_elements(a:List, b:List, c:List )->List:\n    an: Node = a.get_head()\n    bn: Node = b.get_head()\n    cn: Node = c.get_head()\n\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Laboratory/thre_list/solution/method.py b/Laboratory/thre_list/solution/method.py
+--- a/Laboratory/thre_list/solution/method.py	(revision 5ae99aa0bc21ac2fdac1bd11ccf10d28c41a40ed)
++++ b/Laboratory/thre_list/solution/method.py	(date 1709658719110)
+@@ -1,9 +1,7 @@
+ from Laboratory.common_classes.Classes import List, Node
+ 
+ 
+-def common_elements(a:List, b:List, c:List )->List:
++def common_elements(a: List, b: List, c: List) -> List:
+     an: Node = a.get_head()
+     bn: Node = b.get_head()
+     cn: Node = c.get_head()
+-
+-
+Index: .idea/Laboratorio 1 Logica.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<module type=\"PYTHON_MODULE\" version=\"4\">\n  <component name=\"NewModuleRootManager\">\n    <content url=\"file://$MODULE_DIR$\">\n      <excludeFolder url=\"file://$MODULE_DIR$/.venv\" />\n    </content>\n    <orderEntry type=\"jdk\" jdkName=\"Python 3.12\" jdkType=\"Python SDK\" />\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\n  </component>\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/Laboratorio 1 Logica.iml b/.idea/Laboratorio 1 Logica.iml
+--- a/.idea/Laboratorio 1 Logica.iml	(revision 5ae99aa0bc21ac2fdac1bd11ccf10d28c41a40ed)
++++ b/.idea/Laboratorio 1 Logica.iml	(date 1709658722690)
+@@ -4,7 +4,7 @@
+     <content url="file://$MODULE_DIR$">
+       <excludeFolder url="file://$MODULE_DIR$/.venv" />
+     </content>
+-    <orderEntry type="jdk" jdkName="Python 3.12" jdkType="Python SDK" />
++    <orderEntry type="inheritedJdk" />
+     <orderEntry type="sourceFolder" forTests="false" />
+   </component>
+ </module>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"bc8cc3fb-42f2-4d21-929f-edc503680afa\" name=\"Changes\" comment=\"Mariana cambios\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Python Script\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <excluded-from-favorite>\n      <branch-storage>\n        <map>\n          <entry type=\"LOCAL\">\n            <value>\n              <list>\n                <branch-info repo=\"$PROJECT_DIR$\" source=\"master\" />\n              </list>\n            </value>\n          </entry>\n        </map>\n      </branch-storage>\n    </excluded-from-favorite>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;lastFilter&quot;: {\n    &quot;state&quot;: &quot;OPEN&quot;,\n    &quot;assignee&quot;: &quot;JARABRAMA&quot;\n  }\n}</component>\n  <component name=\"GithubPullRequestsUISettings\">\n    <option name=\"selectedUrlAndAccountId\">\n      <UrlAndAccount>\n        <option name=\"accountId\" value=\"db799d60-3180-4caf-bad5-bc1c875bfd27\" />\n        <option name=\"url\" value=\"https://github.com/JARABRAMA/Lab\" />\n      </UrlAndAccount>\n    </option>\n  </component>\n  <component name=\"HighlightingSettingsPerFile\">\n    <setting file=\"file://$PROJECT_DIR$/Laboratory/hight_precition_number/solution/methods.py\" root0=\"SKIP_INSPECTION\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 8\n}</component>\n  <component name=\"ProjectId\" id=\"2d5u6WKWvHY1n7R8jjFwaJw11Du\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"Python.Classes.executor\": \"Debug\",\n    \"Python.Testin_classes.executor\": \"Run\",\n    \"Python.methods.executor\": \"Run\",\n    \"Python.polynomial_rest.executor\": \"Run\",\n    \"Python.test.polinomial_sum.executor\": \"Run\",\n    \"Python.testing sum.executor\": \"Run\",\n    \"Python.testing_circular_list.executor\": \"Run\",\n    \"Python.testing_double_link_list.executor\": \"Run\",\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"last_opened_file_path\": \"C:/Users/ASUS/PycharmProjects/Lab\",\n    \"settings.editor.selected.configurable\": \"editor.preferences.fonts.default\"\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/Laboratory/polynomials/solution\" />\n      <recent name=\"$PROJECT_DIR$/Loboratory/common_classes\" />\n    </key>\n  </component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-python-sdk-d68999036c7f-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.14475.56\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"bc8cc3fb-42f2-4d21-929f-edc503680afa\" name=\"Changes\" comment=\"\" />\n      <created>1709310085554</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1709310085554</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"first commit\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709340435759</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709340435759</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"the clas List is already\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709376117555</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709376117555</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"the class circular list is already\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709384255787</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709384255787</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"resposive names\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709384714404</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709384714404</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"new method get_head() to get the firs nodes of the list\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709397093790</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709397093790</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"the sum is completed but is not tested\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709404730320</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709404730320</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"logical error in the insertion of node_2\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709404935472</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709404935472</updated>\n    </task>\n    <task id=\"LOCAL-00008\" summary=\"incorporated size in the list classes\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709406694802</created>\n      <option name=\"number\" value=\"00008\" />\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709406694802</updated>\n    </task>\n    <task id=\"LOCAL-00009\" summary=\"the rest by similar polynomials are incorporated\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709460136527</created>\n      <option name=\"number\" value=\"00009\" />\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709460136527</updated>\n    </task>\n    <task id=\"LOCAL-00010\" summary=\"the rest is done, but to complete the exercise we need be able to reduce polynomials.That is the next goal.\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709466268148</created>\n      <option name=\"number\" value=\"00010\" />\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709466268148</updated>\n    </task>\n    <task id=\"LOCAL-00011\" summary=\"method reduce polynomial created. Not completed, And constructor of List modified\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709485628928</created>\n      <option name=\"number\" value=\"00011\" />\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709485628928</updated>\n    </task>\n    <task id=\"LOCAL-00012\" summary=\"the rest is completed\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709494877819</created>\n      <option name=\"number\" value=\"00012\" />\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709494877819</updated>\n    </task>\n    <task id=\"LOCAL-00013\" summary=\"Implements better practices in the rest point\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709496382405</created>\n      <option name=\"number\" value=\"00013\" />\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709496382405</updated>\n    </task>\n    <task id=\"LOCAL-00014\" summary=\"polynomi are improved\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709498287239</created>\n      <option name=\"number\" value=\"00014\" />\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709498287239</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"15\" />\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"first commit\" />\n    <MESSAGE value=\"the clas List is already\" />\n    <MESSAGE value=\"the class circular list is already\" />\n    <MESSAGE value=\"resposive names\" />\n    <MESSAGE value=\"new method get_head() to get the firs nodes of the list\" />\n    <MESSAGE value=\"the sum is completed but is not tested\" />\n    <MESSAGE value=\"logical error in the insertion of node_2\" />\n    <MESSAGE value=\"incorporated size in the list classes\" />\n    <MESSAGE value=\"the rest by similar polynomials are incorporated\" />\n    <MESSAGE value=\"the rest is done, but to complete the exercise we need be able to reduce polynomials.That is the next goal.\" />\n    <MESSAGE value=\"method reduce polynomial created. Not completed, And constructor of List modified\" />\n    <MESSAGE value=\"the rest is completed\" />\n    <MESSAGE value=\"Implements better practices in the rest point\" />\n    <MESSAGE value=\"polynomi are improved\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"polynomi are improved\" />\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager>\n      <breakpoints>\n        <line-breakpoint enabled=\"true\" suspend=\"THREAD\" type=\"python-line\">\n          <url>file://$PROJECT_DIR$/Laboratory/common_classes/testing/testing_circular_list.py</url>\n          <line>10</line>\n          <option name=\"timeStamp\" value=\"6\" />\n        </line-breakpoint>\n        <line-breakpoint enabled=\"true\" suspend=\"THREAD\" type=\"python-line\">\n          <url>file://$PROJECT_DIR$/Laboratory/polynomials/solution/methods.py</url>\n          <line>104</line>\n          <option name=\"timeStamp\" value=\"7\" />\n        </line-breakpoint>\n      </breakpoints>\n    </breakpoint-manager>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 5ae99aa0bc21ac2fdac1bd11ccf10d28c41a40ed)
++++ b/.idea/workspace.xml	(date 1709661234948)
+@@ -4,7 +4,12 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="bc8cc3fb-42f2-4d21-929f-edc503680afa" name="Changes" comment="Mariana cambios" />
++    <list default="true" id="bc8cc3fb-42f2-4d21-929f-edc503680afa" name="Changes" comment="polynomial are improved">
++      <change beforePath="$PROJECT_DIR$/.idea/Laboratorio 1 Logica.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Laboratorio 1 Logica.iml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Laboratory/thre_list/solution/method.py" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory/thre_list/solution/method.py" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -59,22 +64,22 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "Python.Classes.executor": "Debug",
+-    "Python.Testin_classes.executor": "Run",
+-    "Python.methods.executor": "Run",
+-    "Python.polynomial_rest.executor": "Run",
+-    "Python.test.polinomial_sum.executor": "Run",
+-    "Python.testing sum.executor": "Run",
+-    "Python.testing_circular_list.executor": "Run",
+-    "Python.testing_double_link_list.executor": "Run",
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "last_opened_file_path": "C:/Users/ASUS/PycharmProjects/Lab",
+-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;Python.Classes.executor&quot;: &quot;Debug&quot;,
++    &quot;Python.Testin_classes.executor&quot;: &quot;Run&quot;,
++    &quot;Python.methods.executor&quot;: &quot;Run&quot;,
++    &quot;Python.polynomial_rest.executor&quot;: &quot;Run&quot;,
++    &quot;Python.test.polinomial_sum.executor&quot;: &quot;Run&quot;,
++    &quot;Python.testing sum.executor&quot;: &quot;Run&quot;,
++    &quot;Python.testing_circular_list.executor&quot;: &quot;Run&quot;,
++    &quot;Python.testing_double_link_list.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="$PROJECT_DIR$/Laboratory/polynomials/solution" />
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"Black\">\n    <option name=\"sdkName\" value=\"Python 3.10 (Laboratorio 1 Logica)\" />\n  </component>\n  <component name=\"ProjectRootManager\" version=\"2\" project-jdk-name=\"Python 3.12\" project-jdk-type=\"Python SDK\" />\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 5ae99aa0bc21ac2fdac1bd11ccf10d28c41a40ed)
++++ b/.idea/misc.xml	(date 1709658722702)
+@@ -3,5 +3,5 @@
+   <component name="Black">
+     <option name="sdkName" value="Python 3.10 (Laboratorio 1 Logica)" />
+   </component>
+-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12" project-jdk-type="Python SDK" />
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10 (Laboratorio 1 Logica)" project-jdk-type="Python SDK" />
+ </project>
+\ No newline at end of file

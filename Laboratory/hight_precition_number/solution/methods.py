@@ -21,11 +21,13 @@ def sum_numbers(a: List, b: List) -> List:
                 n_sum = an.get_data() + bn.get_data() + rest
                 rest = n_sum // 10
                 if not initialize:
-                    result = List(n_sum % 10)
+                    number = n_sum % 10
+                    result = List(number)
+                    initialize = True
                 else:
                     result.insert(0, n_sum % 10)
-                an = an.get_right_link()
-                bn = bn.get_right_link()
+                an = an.get_left_link()
+                bn = bn.get_left_link()
             result.insert(0, rest)
             return result
     else:
