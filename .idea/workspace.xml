@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc8cc3fb-42f2-4d21-929f-edc503680afa" name="Changes" comment="Mariana cambios" />
+    <list default="true" id="bc8cc3fb-42f2-4d21-929f-edc503680afa" name="Changes" comment="Mariana cambios">
+      <change afterPath="$PROJECT_DIR$/Laboratory/thre_list/testing/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laboratory/thre_list/testing/three_list_testing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laboratory/thre_list/solution/method.py" beforeDir="false" afterPath="$PROJECT_DIR$/Laboratory/thre_list/solution/method.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,8 +74,10 @@
     "Python.testing sum.executor": "Run",
     "Python.testing_circular_list.executor": "Run",
     "Python.testing_double_link_list.executor": "Run",
+    "Python.three_list_testing.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/ASUS/PycharmProjects/Lab",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
@@ -80,6 +87,35 @@
       <recent name="$PROJECT_DIR$/Laboratory/polynomials/solution" />
       <recent name="$PROJECT_DIR$/Loboratory/common_classes" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="three_list_testing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Laboratorio 1 Logica" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Laboratory/thre_list/testing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Laboratory/thre_list/testing/three_list_testing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.three_list_testing" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -209,7 +245,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709498287239</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Mariana cambios">
+      <option name="closed" value="true" />
+      <created>1709658508486</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1709658508486</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -238,7 +282,8 @@
     <MESSAGE value="the rest is completed" />
     <MESSAGE value="Implements better practices in the rest point" />
     <MESSAGE value="polynomi are improved" />
-    <option name="LAST_COMMIT_MESSAGE" value="polynomi are improved" />
+    <MESSAGE value="Mariana cambios" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mariana cambios" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
